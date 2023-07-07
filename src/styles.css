@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#content {
+    height: 100vh;
+    background-image: url(./main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#nav {
+    backdrop-filter: blur(8px);
+    height: 5em;
+    width: 100%;
+    border-bottom: 3px solid #009837;
+}
+
+#nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav ul li {
+    width: 150px;
+    height: 104%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav ul li:hover {
+    transition: color 200ms, background-color 200ms, border 0ms;
+    color: white;
+    background-color: #009837;
+    border-bottom: 3px solid white;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(8px);
+    height: 3em;
+    width: 100%;
+    border-top: 3px solid #009837;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer img {
+    height: 40px;
+    margin-left: 6px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    position: fixed;
+    top: calc(50% - 125px);
+    left: calc(50% - 250px);
+    backdrop-filter: blur(8px);
+    border: 3px solid #009837;
+}
+
+#main h1 {
+    font-size: 88px;
+    word-wrap: break-word;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    top: -46px;
+    left: 16px;
+}
+
+#main button {
+    border: none;
+    background-color: #009837;
+    width: 120px;
+    height: 40px;
+    color: white;
+    align-self: center;
+}
+
+#main button:hover {
+    outline: 2px solid white;
+    font-weight: 600;
+    transition: 100ms;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 900px;
+    height: 600px;
+    position: fixed;
+    top: calc(50% - 300px);
+    left: calc(50% - 450px);
+    background-color: rgb(255 255 255 / 0.7);
+    backdrop-filter: blur(8px);
+    border: 3px solid #009837;
+    padding: 0 30px;
+}
+
+.menuItem {
+    display: flex;
+    height: 60px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #009837;
+    align-items: flex-end;
+}
+
+.itemName {
+    color: #009837;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.itemDescription {
+    font-size: 12px;
+    vertical-align: bottom;
+}
+
+.itemPrice {
+    color: #009837;
+    font-size: 24px;
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.itemDescription {
+    color: rgb(80 80 80);
+    margin-left: 14px;
+    margin-bottom: 4px;
+}
+
+#contactsDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 900px;
+    height: 300px;
+    position: fixed;
+    top: calc(50% - 300px);
+    left: calc(50% - 450px);
+    background-color: rgb(255 255 255 / 0.7);
+    backdrop-filter: blur(8px);
+    border: 3px solid #009837;
+    padding: 0 30px;
+}
+
+#contactsDiv div:first-child {
+    grid-row: 1 / 3;
+}
+
+#contactsDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactsDiv h3 {
+    color: #009837;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#contactsDiv p {
+    margin-bottom: 4px;
+}
