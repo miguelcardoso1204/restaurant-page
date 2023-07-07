@@ -16,6 +16,7 @@ function createNavbar() {
     homeButton.innerText = "HOME";
     homeButton.addEventListener("click", () => {
         initializeWebsite("home");
+        console.log("here");
     });
 
     //Navbar List Items (Menu)
