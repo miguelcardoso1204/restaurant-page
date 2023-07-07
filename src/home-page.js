@@ -59,7 +59,7 @@ export default function initializeWebsite(page = "home") {
 
     content.appendChild(createNavbar());
     if (page === "home") {
-        content.appendChild(createContacts());
+        content.appendChild(createHome());
     } else if (page === "menu") {
         content.appendChild(createMenu());
     } else if (page === "contacts") {
